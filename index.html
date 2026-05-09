@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brainiac-sama" />
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1><i class="fa fa-cutlery"></i>&nbsp; Recipe Finder</h1>
+    <p class="sub">Find delicious recipes from around the world</p>
+    <p class="source">Data from TheMealDB</p>
+    <div class="search-div">
+      <input
+        type="text"
+        id="search-box"
+        required
+        placeholder="Search for meals or keywords..."
+      />
+      <button id="search-btn">Search</button>
+    </div>
+    <p id="search-comment"></p>
+    <div id="search-result"></div>
+    <div id="meal-information">
+      <a href="#"
+        ><button class="back-btn">
+          <i class="fa fa-long-arrow-left"></i> Back to recipes
+        </button>
+      </a>
+      <div class="food-content"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
