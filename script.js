@@ -54,6 +54,7 @@ async function loadResults(searchTerm) {
 async function produceSearchResults(searchTerm) {
   searchBtn.disabled = true;
   searchDisplay.innerHTML = "";
+  searchComment.classList.add("search-comment");
   searchComment.innerHTML = `<span class="loading"></span>Searching for ${searchTerm}...`;
   try {
     const results = await loadResults(searchTerm);
@@ -167,9 +168,9 @@ function mealInformation(currentItem, searchTerm) {
   youtubeBtn.classList.add("youtube-btn");
 
   const youtubeIcon = document.createElement("i");
-  youtubeIcon.classList.add("fa", "fa-youtube-play");
+  youtubeIcon.classList.add("fab", "fa-youtube");
   youtubeBtn.appendChild(youtubeIcon);
-  youtubeBtn.textContent = "Watch Video";
+  youtubeBtn.appendChild(document.createTextNode(" Watch Video"));
 
   a.appendChild(youtubeBtn);
   mealDashboard.appendChild(a);
